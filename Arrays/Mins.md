@@ -1,7 +1,7 @@
 def second_smallest(arr_nums):
     
     """
-    Function that return first, second and third smallest numbers in an array 
+    Function that returns first, second and third smallest numbers in an array 
     """
     
     
