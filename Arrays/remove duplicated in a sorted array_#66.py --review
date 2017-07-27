@@ -1,0 +1,19 @@
+
+arr= [3,4,5,5,9,10,10]
+
+
+def remove_duplicates(arr):
+  
+  output = []
+  
+  # loop through
+  for i in arr:
+  
+    if i not in output :
+      
+      output.append(i)
+  
+  return output
+  
+print remove_duplicates(arr)
+
