@@ -1,0 +1,32 @@
+
+def plus_one(arr):
+  
+  # Edge Case:
+  if len(arr) == 0 :
+    return None
+    
+  # set an array 
+  output_arr = []
+  
+  # loop through the arr
+  for i in range(len(arr)):
+  
+  # get the max of the arr
+    num = max(arr)
+    output_arr.append(num)
+    
+  # remove it 
+    arr.remove(num)
+    
+  # return the array
+  return output_arr
+  
+print plus_one(arr1)  
+  
+  
+  
+#Testing 
+#arr1 = [5, 8, 9 , 10] # [10,9,8,5]
+#arr1 = [1,10,5,6,0]   # [10,6,5,1,0]
+#arr3 = [] # None
+
