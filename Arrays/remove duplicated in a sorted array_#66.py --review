@@ -16,6 +16,7 @@ def remove_duplicates(arr):
       output.append(i)
   
   return output
+  #return (len(output)
   
 print remove_duplicates(arr)
 
