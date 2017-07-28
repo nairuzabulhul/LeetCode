@@ -20,6 +20,7 @@ def remove_duplicates(arr):
 print remove_duplicates(arr)
 
 
+
 ## Solution 2: works and passes LeetCode Test Cases
 
 class Solution(object):
@@ -38,3 +39,7 @@ class Solution(object):
                 j = j + 1
         return j+1
         
+        
+        
+        
+
