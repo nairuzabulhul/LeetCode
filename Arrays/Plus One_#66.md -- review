@@ -25,42 +25,35 @@ print plus_one(arr1)
   
   
   
-#Testing 
-#arr1 = [5, 8, 9 , 10] # [10,9,8,5]
-#arr1 = [1,10,5,6,0]   # [10,6,5,1,0]
-#arr3 = [] # None
 
 
-### Solution 2 
+### Solution 2:
+
+arr= [3,4,8,2,6]
 
 def plus_one(arr):
   
-  # Edge Case:
-  if len(arr) == 0 :
-    return None
-    
-  # set an array 
-  output_arr = []
+  output = []
   
-  # loop through the arr
   for i in range(len(arr)):
-  
-  # get the max of the arr
-    num = max(arr)
-    output_arr.append(num)
     
-  # remove it 
-    arr.remove(num)
+    if arr[i] == arr[-1]:
+      
+      num = arr[-1] + 1
+      output.append(num)
+      
+    else:
+      
+      output.append(arr[i])
     
-  # return the array
-  return output_arr
+  return output
   
-print plus_one(arr)  
-  
-#Testing 
-arr1 = [5, 8, 9 , 10] # [10,9,8,5]
-arr1 = [1,10,5,6,0]   # [10,6,5,1,0]
-arr3 = [] # None
+print plus_one(arr)
+
+
+# Testing:
+# arr = [3,4,5,8]
+#output = [3,4,5,9]
 
 
 
