@@ -1,0 +1,38 @@
+def array_partiton(num,arr):
+  
+  
+  output = []
+  sum_n = 0 
+  
+  array_size = len(arr)
+  
+  if array_size >= num :
+    
+    for i in arr:
+      
+        sub_arr1 = arr[:num]
+        sub_arr2 = arr[num:]
+        
+    output.append(sub_arr1)    
+    output.append(sub_arr2)
+    
+    
+  
+  for n in output:
+    
+    sum_n += min(n)
+    
+  return sum_n 
+      
+    
+  
+  
+  
+n = 2
+arr = [1,2,3,4]
+
+print array_partiton(n ,arr)
+  
+  
+  
+
