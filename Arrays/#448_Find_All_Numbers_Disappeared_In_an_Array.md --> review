@@ -1,0 +1,27 @@
+def disappeared_arr(arr):
+  
+  if len(arr) == 0:
+    
+    return None
+    
+  
+  max_num = max(arr)
+  range_num = range(1,max_num)
+  
+  output = []
+  
+  for i in range_num:
+    
+    if i not in arr:
+      
+      output.append(i)
+  
+  return output    
+
+
+#Testing
+#arr = [4,3,2,7,8,2,3,1]
+#print disappeared_arr(arr)
+
+
+#output : [5,6]
