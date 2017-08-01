@@ -2,13 +2,11 @@ def pluse_one(digits):
   
   
   if len(digits) == 0 :
-    
       return None
       
   output = []
   
   for i in digits:
-    
     output.append(str(i)) 
     
   join_nums = int(('').join(output)) + 1 
@@ -16,7 +14,6 @@ def pluse_one(digits):
   final = []
   
   for n in str(join_nums):
-    
     final.append(int(n))
     
   return final
@@ -26,9 +23,9 @@ def pluse_one(digits):
 #arr= [9,9,9]
 #print pluse_one(arr)
 
+############################################################################################################################
 
 ##Solution 2 : ##optimized & shorter :
-
 def plusOne2(digits): 
  
            digits = [str(x) for x in digits] 
