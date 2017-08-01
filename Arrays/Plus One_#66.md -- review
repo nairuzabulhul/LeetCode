@@ -1,62 +1,44 @@
-
-def plus_one(arr):
+def pluse_one(digits):
   
-  # Edge Case:
-  if len(arr) == 0 :
-    return None
+  
+  if len(digits) == 0 :
     
-  # set an array 
-  output_arr = []
-  
-  # loop through the arr
-  for i in range(len(arr)):
-  
-  # get the max of the arr
-    num = max(arr)
-    output_arr.append(num)
-    
-  # remove it 
-    arr.remove(num)
-    
-  # return the array
-  return output_arr
-  
-print plus_one(arr1)  
-  
-  
-  
-
-
-### Solution 2:
-
-arr= [3,4,8,2,6]
-
-def plus_one(arr):
-  
+      return None
+      
   output = []
   
-  for i in range(len(arr)):
+  for i in digits:
     
-    if arr[i] == arr[-1]:
-      
-      num = arr[-1] + 1
-      output.append(num)
-      
-    else:
-      
-      output.append(arr[i])
+    output.append(str(i)) 
     
-  return output
+  join_nums = int(('').join(output)) + 1 
   
-print plus_one(arr)
+  final = []
+  
+  for n in str(join_nums):
+    
+    final.append(int(n))
+    
+  return final
 
 
-# Testing:
-# arr = [3,4,5,8]
-#output = [3,4,5,9]
+#Testing
+#arr= [9,9,9]
+#print pluse_one(arr)
 
 
+##Solution 2 : ##optimized & shorter :
 
+def plusOne2(digits): 
+ 
+           digits = [str(x) for x in digits] 
+           print digits
+           
+           num = int(''.join(digits)) + 1 
+           print num
+           
+           return [int(x) for x in str(num)] 
 
-
-
+#Testing
+#srr= [9,9,9]
+#print plusOne2(srr)
