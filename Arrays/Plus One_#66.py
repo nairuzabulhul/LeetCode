@@ -29,11 +29,8 @@ def pluse_one(digits):
 def plusOne2(digits): 
  
            digits = [str(x) for x in digits] 
-           print digits
-           
            num = int(''.join(digits)) + 1 
-           print num
-           
+    
            return [int(x) for x in str(num)] 
 
 #Testing
