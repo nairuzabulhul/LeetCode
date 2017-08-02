@@ -36,3 +36,53 @@ print array_partiton(n ,arr)
   
   
 
+
+###Testing 
+def array_partiton(num, arr):
+  
+  
+  output = []
+  sum_n = 0 
+  
+  array_size = len(arr)
+  sorted_arr = sorted(arr)
+  res = []
+
+  
+  
+  for n in sorted_arr:
+        if n != 0:
+                res.append(n)
+
+  print res
+  size = len(arr)/num
+  
+  if array_size > num :
+    
+         k = [res[i:i+size] for i  in range(0, len(res), size)]
+         print k 
+         for n in k:
+            
+                 sum_n += min(n)
+            
+         return sum_n 
+    
+  else:
+          return min(res)
+  
+  
+      
+    
+  
+  
+  
+n = 3
+#arr = [1,4,3,2] #output 4
+#arr =[1,1] # output 1
+#arr = [7,3,1,0,0,6] # output 7 
+#arr = [9,1,5,6,7,2] #output 13
+print array_partiton(n ,arr)
+  
+  
+
+
