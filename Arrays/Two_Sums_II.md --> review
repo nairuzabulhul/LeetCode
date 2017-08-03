@@ -1,0 +1,26 @@
+def two_sums (arr, target):
+  
+  look_dict = {}
+  
+  for key, value in enumerate(arr):
+    
+    custom_key = key +1 
+    
+    res = target - value 
+    
+    if res in look_dict:
+      return [look_dict[res], custom_key ]
+
+    else:
+      
+      look_dict[value] = custom_key 
+      
+      
+      
+      
+#arr = [1,5,6,3]
+#arr =[2,7,11,19] # output = [1,2]
+target = 9
+
+print two_sums (arr, target)
+
