@@ -1,1 +1,19 @@
 
+def remove_element(val, arr):
+  
+  if len(arr) == 0 :
+    return []
+    
+  # loop through the array 
+  for i in arr:
+  
+  # remove the exact value 
+      if i == val:
+          arr.remove(val)
+  
+  # return the length of the new arr
+  return len(arr)
+
+val = 3
+arr = [3,2,2,3]
+print remove_element(val,arr)
