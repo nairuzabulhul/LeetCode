@@ -25,7 +25,7 @@ print array_partiton(n ,arr)
 
 
 
-##Testing :
+##Testing ::
 
 def array_partiton(num, arr):  
 
