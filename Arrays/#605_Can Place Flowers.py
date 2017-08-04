@@ -20,5 +20,4 @@ def flower_bed(num, arr):
 #=2
 #rr= [1,0,0,0,1]
 #rint flower_bed(n,arr)
-
 #output : False if n = 2 , and True if n =1 
