@@ -1,6 +1,3 @@
-arr = [2,8,1]
-
-
 class Solution(object):
     
     def thirdMax(self, nums):
