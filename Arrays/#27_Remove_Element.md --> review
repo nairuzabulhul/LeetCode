@@ -17,3 +17,6 @@ def remove_element(val, arr):
 val = 3
 arr = [3,2,2,3]
 print remove_element(val,arr)
+
+
+## remove element # test [3,3] #output should be 3
